@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/form.js" defer></script>
+</head>
+
+<body>
+    <section>
+        <h1>DE KUNST VAN</h1>
+        <h2>JOHAN HOUTHOOFD</h2>
+
+    </section>
+    <section>
+        <ul>
+            <li class="list" data-filter="werken"><a href="/index.html">Werken</li></a>
+            <li class="list" data-filter="over"><a href="/over.html">Over mij</li></a>
+            <li class="list active" data-filter="contact"><a href="/contact.html">Contact</li></a>
+        </ul>
+    </section>
+
+    <section>
+        <div class="container">
+            <form onsubmit="stuurEmail()" action="bedankt.html">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="vnaam">Voornaam</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="vnaam" name="voornaam">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="naam">Naam</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="naam" name="naam">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="onderwerp">Onderwerp</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="onderwerp" name="onderwerp">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Bericht</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="bericht" name="bericht" style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Verzenden" onclick="stuurEmail()">
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
