@@ -8,6 +8,10 @@
 
 }
 
+.wrapper-gallery {
+    margin: auto;
+}
+
 section {
     padding: 20px;
     width: 100%;
@@ -15,7 +19,7 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: auto ;
+    margin: auto;
 }
 
 section ul {
@@ -53,6 +57,7 @@ section ul li.active {
     height: 200px;
     margin: 5px;
     display: block;
+    cursor: pointer;
 }
 
 .kunst .itemBox.hide {
