@@ -25,46 +25,25 @@
     </section>
 
     <section>
-        <div class="container">
-            <form onsubmit="stuurEmail()" action="bedankt.html">
-                <div class="row">
-                    <div class="col-25">
-                        <label for="vnaam">Voornaam</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="vnaam" name="voornaam">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="naam">Naam</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="naam" name="naam">
+        <div class="kaart">
+            <div class="row">
+                <div class="column">
+                    <h2 class="naam">Johan Houthoofd</h2>
+                    <div class="block information">
+                        <p class="expertise">linosneden</p>
+                        <p>Wasstraat 58 <br> 9000 Gent, België</p>
+                        <br>
+                        <p>0471 553 408</p>
+                        <br>
+                        <a href="mailto:johanskippy@yahoo.com" target="_blank"><p>johanskippy@yahoo.com</p></a>
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-25">
-                        <label for="onderwerp">Onderwerp</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="onderwerp" name="onderwerp">
+                <div class="column">
+                    <div class="block profile-pic">
+                        <img src="/img/thumb1.jpg" alt="">
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-25">
-                        <label for="subject">Bericht</label>
-                    </div>
-                    <div class="col-75">
-                        <textarea id="bericht" name="bericht" style="height:200px"></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <input type="submit" value="Verzenden" onclick="stuurEmail()">
-                </div>
-            </form>
+            </div>
         </div>
     </section>
 </body>
