@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+/* alles */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-
-}
-
-.wrapper-gallery {
-  margin: auto;
+  overflow-y: hidden;
 }
 
 a:link {
@@ -32,7 +29,6 @@ a:active {
 }
 
 section {
-  padding: 20px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -46,14 +42,13 @@ section ul {
   justify-self: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 20px;
 }
 
 section ul li {
   list-style: none;
   background: #eee;
-  padding: 12px 20px;
-  margin: 5px;
+  padding: 12px 5px;
+  margin: 10px;
   letter-spacing: 1px;
   cursor: pointer;
 }
@@ -62,6 +57,15 @@ section ul li.active {
   background: burlywood;
   color: black;
 }
+
+/* about */
+
+.bio {
+  margin: 10px;
+  padding: 10px 50px;
+}
+
+/* index */
 
 .kunst {
   display: flex;
@@ -93,105 +97,6 @@ section ul li.active {
   object-fit: none;
 }
 
-input[type=text],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid black;
-  border-radius: 4px;
-  box-sizing: border-box;
-  resize: vertical;
-}
-
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
-input[type=submit] {
-  background-color: burlywood;
-  color: black;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
-
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-.col-75 {
-  float: left;
-  width: 100%;
-  margin-top: 6px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and (max-width: 600px) {
-
-  .col-25,
-  .col-75,
-  input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-
 .kaart {
-  width: 600px;
-  height: 350px;
-  margin: 50px auto 0;
-  display: flex;
-  grid-template-columns: auto;
-}
-
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 50%;
-}
-
-h2.naam {
-  margin: 20px 50px 0;
-  font-size: 22px;
-}
-
-p.expertise {
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.profile-pic img {
-  margin: 20px;
-}
-
-.information {
-  box-sizing: border-box;
-  padding: 10px 40px 20px 50px;
-}
-
-address {
-  font-size: 20px;
-  margin-bottom: 10px;
+  padding: 10px 50px;
 }
