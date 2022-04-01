@@ -10,7 +10,7 @@ He paints in the style of [linocut](https://en.wikipedia.org/wiki/Linocut "Linoc
 In his minimalistic website you wil find a bunch of artworks which you may have the opportunity to showcase
 through your visit.
 
-![alt text](https://github.com/fedei91/website-van-kunst/blob/first-release/utils/screenshots/screen1.png "Home site")
+![Home site](utils/screenshots/screen1.png "Home site")
 
 Later on, you will be able to read a little about Johan (in four languages. Belgian people are that intelligent!), and his
 art and society vision.
