@@ -9,6 +9,15 @@
 
 }
 
+#navbar_wrapper {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background-color: white;
+}
+
 a:link {
   text-decoration: none;
 }
@@ -62,16 +71,18 @@ section ul li.active {
 
 .bio {
   margin: 10px;
-  padding: 10px 50px;
+  
+  padding-top: 8rem;
 }
 
 /* index */
 
-.kunst {
+.kunst {  
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding-top: 8rem;
 }
 
 .kunst .itemBox {
@@ -98,5 +109,13 @@ section ul li.active {
 }
 
 .kaart {
-  padding: 10px 50px;
+  padding-top: 8rem;
 }
+
+/*
+
+.lb-details span.lb-number {
+  display: none ;
+  }
+
+*/
