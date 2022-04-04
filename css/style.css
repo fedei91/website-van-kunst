@@ -6,11 +6,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-
 }
 
 #navbar_wrapper {
   position: fixed;
+  font-size: medium;
   width: 100%;
   top: 0;
   left: 0;
@@ -56,8 +56,7 @@ section ul {
 section ul li {
   list-style: none;
   background: #eee;
-  padding: 12px 5px;
-  margin: 10px;
+  margin: 5px;
   letter-spacing: 1px;
   cursor: pointer;
 }
@@ -111,6 +110,7 @@ section ul li.active {
 .kaart {
   padding-top: 8rem;
 }
+
 
 /*
 
