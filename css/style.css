@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 /* alles */
+html, body {
+  width: 100%;
+  height: 100%;
+}
 
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
@@ -10,7 +14,7 @@
 
 #navbar_wrapper {
   position: fixed;
-  font-size: medium;
+  opacity: 0.9;
   width: 100%;
   top: 0;
   left: 0;
@@ -43,7 +47,6 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: auto;
 }
 
 section ul {
@@ -70,7 +73,6 @@ section ul li.active {
 
 .bio {
   margin: 10px;
-  
   padding-top: 8rem;
 }
 
@@ -93,6 +95,10 @@ section ul li.active {
   cursor: pointer;
 }
 
+.itemBox:hover {
+  opacity: 0.5;
+}
+
 .kunst .itemBox.hide {
   display: none;
 }
@@ -108,9 +114,25 @@ section ul li.active {
 }
 
 .kaart {
-  padding-top: 8rem;
+  padding-top: 8rem; 
 }
 
+.col {
+  display: block;
+  margin-left: auto;
+  padding: 5px;
+}
+
+@media (orientation: landscape) {
+  .kaart {
+    padding-top: 8rem;
+    -webkit-columns: 2 200px;
+       -moz-columns: 2 200px;
+            columns: 2 200px;
+    -moz-column-fill: auto;
+         column-fill: auto;
+  }
+}
 
 /*
 
