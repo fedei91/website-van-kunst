@@ -2,7 +2,7 @@
 
 Welcome to my first responsive website repository.
 
-I present you all Johan Houthoofd.
+I present you all [Johan Houthoofd](https://johanhouthoofd.com "Deployed website").
 
 Johan is an artist who lives in Ghent, Belgium. He does art for a living.
 He paints in the style of [linocut](https://en.wikipedia.org/wiki/Linocut "Linocut wikipedia entry").
