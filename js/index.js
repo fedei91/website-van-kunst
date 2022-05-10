@@ -17,7 +17,6 @@ const navbar = document.getElementById('navbar_wrapper');
 
                         popup.style.display = "block";
                         navbar.style.filter = "blur(5px)";
-                        
                         navbar.style.pointerEvents = "none";
                         kunst.style.pointerEvents = "none";
                         // time delay for popup
@@ -31,5 +30,5 @@ const navbar = document.getElementById('navbar_wrapper');
                         kunst.style.visibility = "visible"
                         navbar.style.pointerEvents = "auto";
                         kunst.style.pointerEvents = "auto";
-                        navbar.style.opacity = "0.9";
+                        navbar.style.position = "fixed"
                 })
