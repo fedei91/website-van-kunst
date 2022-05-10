@@ -130,7 +130,8 @@ html, body {
 }
 
 #navbar_wrapper {
-  
+  position: fixed;
+  visibility: hidden;
   opacity: 0.9;
   width: 100%;
   top: 0;

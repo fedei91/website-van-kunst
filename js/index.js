@@ -26,9 +26,8 @@ const navbar = document.getElementById('navbar_wrapper');
                         popup.style.display = "none";
                         navbar.style.display = "block";
                         navbar.style.filter = "blur(0)";
+                        navbar.style.visibility = "visible";
                         kunst.style.filter = "blur(0)";
-                        kunst.style.visibility = "visible"
                         navbar.style.pointerEvents = "auto";
                         kunst.style.pointerEvents = "auto";
-                        navbar.style.position = "fixed"
                 })
