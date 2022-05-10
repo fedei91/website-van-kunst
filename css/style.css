@@ -14,7 +14,7 @@ html, body {
 
 .popup {
   position: fixed;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
@@ -23,7 +23,7 @@ html, body {
 .contentBox {
   position: relative;
   width: 310px;
-  height: 730px;
+  height: 600px;
   background: #fff;
   border-radius: 10px;
   display: flex;
@@ -43,21 +43,21 @@ html, body {
 .contentBox .imgBx::before {
   content: '';
   position: absolute;
-  width: 210px;
-  height: 365px;
+  width: 180px;
+  height: 310px;
   background-color: #000;
 }
 
 .contentBox .imgBx img {
   position: relative;
-  height: 330px;
+  height: 300px;
   z-index: 1;
 }
 
 .contentBox .content {
   position: relative;
   width: 200px;
-  height: 400px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,7 +72,7 @@ html, body {
 
 .contentBox .content h2 {
   line-height: 1em;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 .close {
@@ -92,31 +92,53 @@ html, body {
 
 /* responsive design for the event */
 @media (orientation: landscape) {
+  .popup {
+    top: 60%;
+  }
+
   .contentBox {
     width: 530px;
-    height: 360px;
+    height: 260px;
     flex-direction: row;
   }
 
   .contentBox .imgBx {
     max-width: 200px;
-    height: 480px;
+    height: 380px;
     transform: translateY(-60px);
+  }
+
+  .contentBox .imgBx img {
+    position: relative;
+    height: 250px;
+    z-index: 1;
   }
 
   .contentBox .imgBx::before {
     content: '';
     position: absolute;
-    width: 210px;
-    height: 350px;
+    width: 145px;
+    height: 255px;
     background-color: #000;
   }
 
   .contentBox .content {
     height: auto;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     padding-top: 0;
+  }
+
+  .contentBox .content h3 {
+    color: #333;
+    line-height: 1em;
+    font-weight: 300;
+    font-size: 2em;
+  }
+  
+  .contentBox .content h2 {
+    line-height: 1.5em;
+    font-size: 1em;
   }
 
   .close {
