@@ -12,9 +12,126 @@ html, body {
   font-family: 'Poppins', sans-serif;
 }
 
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.contentBox {
+  position: relative;
+  width: 310px;
+  height: 730px;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.9);
+  flex-direction: column;
+}
+
+.contentBox .imgBx {
+  position: relative;
+  width: 200px;
+  height: 425px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentBox .imgBx::before {
+  content: '';
+  position: absolute;
+  width: 210px;
+  height: 365px;
+  background-color: #000;
+}
+
+.contentBox .imgBx img {
+  position: relative;
+  height: 330px;
+  z-index: 1;
+}
+
+.contentBox .content {
+  position: relative;
+  width: 200px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentBox .content h3 {
+  color: #333;
+  line-height: 1em;
+  font-weight: 300;
+  font-size: 3em;
+}
+
+.contentBox .content h2 {
+  line-height: 1em;
+  font-size: 2em;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  background: #f3f3f3 url(/img/close.png);
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+/* responsive design for the event */
+@media (orientation: landscape) {
+  .contentBox {
+    width: 530px;
+    height: 360px;
+    flex-direction: row;
+  }
+
+  .contentBox .imgBx {
+    max-width: 200px;
+    height: 480px;
+    transform: translateY(-60px);
+  }
+
+  .contentBox .imgBx::before {
+    content: '';
+    position: absolute;
+    width: 210px;
+    height: 350px;
+    background-color: #000;
+  }
+
+  .contentBox .content {
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    padding-top: 0;
+  }
+
+  .close {
+    top: 10px;
+    right: 10px;
+    background: #f3f3f3 url(/img/close.png);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center;
+  }
+}
+
 #navbar_wrapper {
   position: fixed;
-  opacity: 0.9;
+  opacity: 0;
   width: 100%;
   top: 0;
   left: 0;
@@ -84,6 +201,7 @@ section ul li.active {
   align-items: center;
   flex-wrap: wrap;
   padding-top: 8rem;
+  filter: blur(5px);
 }
 
 .kunst .itemBox {
@@ -93,6 +211,7 @@ section ul li.active {
   margin: 5px;
   display: block;
   cursor: pointer;
+  
 }
 
 .itemBox:hover {
