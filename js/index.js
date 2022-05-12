@@ -17,8 +17,6 @@ const navbar = document.getElementById('navbar_wrapper');
 
                         popup.style.display = "block";
                         navbar.style.filter = "blur(5px)";
-                        navbar.style.pointerEvents = "none";
-                        kunst.style.pointerEvents = "none";
                         // time delay for popup
                 }
 
