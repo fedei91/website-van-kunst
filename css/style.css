@@ -153,8 +153,9 @@ html, body {
 
 #navbar_wrapper {
   position: fixed;
-  visibility: hidden;
+  /* visibility: hidden;
   pointer-events: none;
+  */
   opacity: 0.9;
   width: 100%;
   top: 0;
@@ -225,8 +226,9 @@ section ul li.active {
   align-items: center;
   flex-wrap: wrap;
   padding-top: 8rem;
-  pointer-events: none;
+  /* pointer-events: none;
   filter: blur(5px);
+  */
 }
 
 .kunst .itemBox {
