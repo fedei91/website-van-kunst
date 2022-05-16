@@ -8,7 +8,8 @@
         }
     )
 
-*/    
+*/
+/*    
 const navbar = document.getElementById('navbar_wrapper');
                 const popup = document.querySelector('.popup');
                 const close = document.querySelector('.close');
@@ -29,3 +30,4 @@ const navbar = document.getElementById('navbar_wrapper');
                         navbar.style.pointerEvents = "auto";
                         kunst.style.pointerEvents = "auto";
                 })
+*/
